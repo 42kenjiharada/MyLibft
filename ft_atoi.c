@@ -28,7 +28,7 @@ atoi は 標準ライブラリ <stdlib.h> に含まれる関数で、
 ✅ オーバーフローを考慮するなら strtol を使うのが安全！
 
 long	num; // ✅ `long` を使うことでオーバーフローを検出
-test github
+test github 自宅にて
 */
 
 #include "libft.h"
