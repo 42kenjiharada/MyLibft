@@ -6,11 +6,12 @@
 /*   By: kharada <kharada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:34:56 by kharada           #+#    #+#             */
-/*   Updated: 2025/03/20 20:41:48 by kharada          ###   ########.fr       */
+/*   Updated: 2025/03/20 21:00:22 by kharada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+
 atoi は 標準ライブラリ <stdlib.h> に含まれる関数で、
 文字列を整数（int 型）に変換する関数 だよ。
 8. atoi の注意点
@@ -70,6 +71,7 @@ int	ft_atoi(const char *nptr)
 	long	num;
 
 	i = skip_whitespace(nptr);
+
 	sign = parse_sign(nptr, &i);
 	num = 0;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
@@ -86,3 +88,4 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * num);
 }
+
